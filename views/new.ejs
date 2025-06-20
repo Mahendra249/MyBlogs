@@ -1,0 +1,42 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+     <!-- <Form action="/posts" method="post">
+        <input placeholder="Enter Username" name="username" type="text"> <br> <br>
+        <textarea placeholder="write your post" name="content" id="" cols="30" rows="10"></textarea> <br> <br>
+        <button>Submit Post</button>
+     </Form> -->
+     <div class=" flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+      <div class="w-full flex justify-center items-center">
+         <h1 class="text-2xl font-semibold">Create a New Blog Post</h1>
+      </div>
+      <Form class="bg-white shadow-lg rounded px-8 pt-6 pb-8 mt-2 mb-4"  action="/posts" method="post">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+           Title
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username"  name="username" type="text" placeholder="Enter Title">
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+            Content
+          </label>
+          <input placeholder="write your post" name="content" id=""  type="text" class="p-3 w-full"></input>
+     
+        </div>
+        <div class="flex items-center justify-end">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+  </html>
